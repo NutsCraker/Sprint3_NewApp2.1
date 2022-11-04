@@ -6,30 +6,18 @@
 //
 
 import UIKit
-private var count: Int = 0
-private let text: String = "Значение счетчика: "
 class ViewController: UIViewController {
-
-    @IBOutlet weak var ChangeButton: UIButton!
-    
-    @IBOutlet weak var CounterText: UILabel!
-    
-    
+    private var count: Int = 0
+    private let text: String = "Значение счетчика: "
+    @IBOutlet weak var changeCounterButton: UIButton!
+    @IBOutlet weak var counterTextLabel: UILabel!
     @IBAction func TapButton(_ sender: Any) {
-        CounterText.text = text + String(count)
-        count = count+1
-        
-    }
-        
-      
-    
+        counterTextLabel.text = text + String(count)
+         count = count+1                    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        CounterText.text = text + String(count)
-        ChangeButton.setTitle("Нажми меня", for: .normal)
+        counterTextLabel.text = text + String(count)
+        changeCounterButton.setTitle("Нажми меня", for: .normal)
     }
-
-
 }
 
