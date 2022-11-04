@@ -41,8 +41,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="ChangeButton" destination="a87-RE-S1a" id="U34-pz-HjO"/>
-                        <outlet property="CounterText" destination="01v-X7-mu6" id="K8d-4Y-094"/>
+                        <outlet property="changeCounterButton" destination="a87-RE-S1a" id="aYf-gT-dvk"/>
+                        <outlet property="counterTextLabel" destination="01v-X7-mu6" id="Kx2-dP-7hp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
