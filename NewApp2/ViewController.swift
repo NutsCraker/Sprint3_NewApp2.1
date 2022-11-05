@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     private let text: String = "Значение счетчика: "
     @IBOutlet weak var changeCounterButton: UIButton!
     @IBOutlet weak var counterTextLabel: UILabel!
-    @IBAction func TapButton(_ sender: Any) {
+    @IBAction func didTapChangeCounterButton(_ sender: Any) {
         counterTextLabel.text = text + String(count)
          count = count+1                    }
     override func viewDidLoad() {
